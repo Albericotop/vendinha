@@ -1,0 +1,16 @@
+
+spring:
+  application:
+    name: estacionamento
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/vendinha_db
+    username: postgres
+    password: pica
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+server:
+  port: 8080
